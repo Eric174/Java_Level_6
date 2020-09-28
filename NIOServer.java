@@ -44,7 +44,6 @@ public class NIOServer implements Runnable {
                         //channel.write(ByteBuffer.wrap("Hello!".getBytes()));
                     }
                     if (key.isReadable()) {
-                        // TODO: 7/23/2020 fileStorage handle
                         ByteBuffer buffer = ByteBuffer.allocate(1024);
                         System.out.println("read key");
                         SocketChannel channel = (SocketChannel) key.channel();
@@ -118,7 +117,7 @@ public class NIOServer implements Runnable {
                                 //os.writeUTF("File not exists");
                             }
                         } else {
-                            // TODO: 7/23/2020 upload
+                            // upload
                         }
                     }
                 }
