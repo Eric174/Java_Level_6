@@ -102,7 +102,7 @@ public class Controller implements Initializable {
                 e.printStackTrace();
             }
         } else {
-            // TODO: 7/23/2020 upload
+           //upload
         }
     }
 }
